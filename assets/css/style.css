@@ -64,7 +64,7 @@ body {
     flex: 1 1 100vw;
     background-color: var(--cor-bg);
     background-image: url(../images/BG_ruido.png);
-    background-size: 500px auto;
+    background-size: 600px auto;
 }
 
 .emojis {
