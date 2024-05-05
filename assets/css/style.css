@@ -219,7 +219,6 @@ a:link {
 
 .menu-active {
     color: var(--laranja-menos-claro);
-    text-shadow: 0 0 5px rgb(214, 172, 120, .7);
 }
 
 /* RECOMENDADOS */
