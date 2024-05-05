@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Cardápio</title>
+  </head>
+
+  <body>
+
+    <div class="bordaSuperior"></div>
+
+    <div class="emojis">
+      <div class="emoji1"><img src="assets/images/pimenta_borrada.png" alt=""></div>
+      <div class="emoji2"><img src="assets/images/Bacon.png" alt=""></div>
+      <div class="emoji3"><img src="assets/images/Folha.png" alt=""></div>
+      <div class="emoji4"><img src="assets/images/Batata_borrada.png" alt=""></div>
+    </div>
+
+    <!--Cabeçalho-->
+    <header>
+      
+      <a href="">
+        <div class="logo">
+          <img src="assets/images/Logo-Icon.svg" alt="">
+          <p> Miague </p>
+          <p> Burger </p>
+        </div>
+      </a>
+
+      <ul>
+        <li>
+          <a class="menu-header" href="index.html">Home</a>
+          <a class="menu-header menu-active" href="index.html">Cardápio</a>
+        </li>
+      </ul>
+      
+    </header>
+    
+    <!-- Promoção -->
+    <aside>
+      <div class="promotion">
+        
+        <li>
+          <a href="https://www.instagram.com/miagueburger/"> <img src="assets/images/Instagram_Logo_2022.svg" alt="">Miague Burger</a>
+          <a href="https://wa.me/5565992986191?text=Ol%C3%A1+gostaria+de+fazer+um+pedido"> <img src="assets/images/whatsapp-verde-escuro.svg" alt="">(65) 99298-6191</a>
+          <a href="https://www.ifood.com.br/delivery/cuiaba-mt/miague-burger-jardim-imperial/b3f21f3f-207b-4a74-be0d-043169881f3e"> <img src="assets/images/ifood.svg" alt="">iFood</a>
+        </li>
+        
+      </div>
+    </aside>
+
+    <main>
+      <section>
+
+        <!-- Botões -->
+        <div class="tab-buttons">
+
+          <button onclick="abrirTab(this, 'combos')" class="tab button-active">
+            Combos
+          </button>
+        
+          <button onclick="abrirTab(this, 'gourmet')" class="tab">
+            Gourmet
+          </button>
+
+          <button onclick="abrirTab(this, 'tradicionais')" class="tab">
+            Tradicionais
+          </button>
+
+          <button onclick="abrirTab(this, 'smash')" class="tab">
+            Smash
+          </button>
+
+          <button onclick="abrirTab(this, 'files')" class="tab">
+            Filés
+          </button>
+
+          <button onclick="abrirTab(this, 'adicionais')" class="tab">
+            Adicionais
+          </button>
+
+          <button onclick="abrirTab(this, 'porcoes')" class="tab">
+            Porções
+          </button>
+
+          <button onclick="abrirTab(this, 'bebidas')" class="tab">
+            Bebidas
+          </button>
+
+        </div>
+
+        <!-- Itens -->
+
+
+        <!-- Combos -->
+        <div id="combos" class="box box-active">          
+
+          <div class="card"> <!-- Combo individual -->
+
+              <div class="image">
+                <img src="assets/images/Logo.png">
+                <a href="https://wa.me/5565992986191?text=Ol%C3%A1+gostaria+de+pedir+um+%2ACombo+individual%2A">
+                  <button class="pedir">
+                    <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p>
+                  </button>
+                </a> 
+              </div>
+              
+              <div class="info-card">
+                <h2 class="titulo">Combo individual</h2>
+                <p class="descricao">1 baguncinha <br> 1 refrigerante lata <br> 1 batata mini</p>
+                <div class="preco"> <button> R$20,00 </button> </div>
+              </div>
+
+          </div>
+
+          <div class="card"> <!-- Combo da casa -->
+
+              <div class="image">
+                <img src="assets/images/Logo.png">
+                <a href="https://wa.me/5565992986191?text=Ol%C3%A1+gostaria+de+fazer+um+pedido"> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a>
+              </div>
+
+              <div class="info-card">
+                <h2 class="titulo">Combo da casa</h2>
+                <p class="descricao">1 X-da casa <br> 1 refrigerante lata <br> 1 batata pequena com cheedar</p>
+                <div class="preco"> <button> R$20,00 </button> </div>
+              </div>
+
+          </div>
+
+          <div class="card"> <!-- Combo para dividir -->
+
+              <div class="image">
+                <img src="assets/images/Logo.png">
+                <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a>
+              </div>
+
+              <div class="info-card">
+                <h2 class="titulo">Combo para dividir</h2>
+                <p class="descricao">2 baguncinha <br> 2 refrigerante lata <br> 1 batata pequena com cheedar</p>
+                <div class="preco"> <button> R$20,00 </button> </div>
+              </div>
+
+          </div>
+
+          <div class="card"> <!-- Combo casal -->
+
+              <div class="image">
+                <img src="assets/images/Logo.png">
+                <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a>
+              </div>
+
+              <div class="info-card">
+                <h2 class="titulo">Combo casal</h2>
+                <p class="descricao">2 X-da casa <br> 1 Coca cola 1,5L <br> 1 batata pequena com cheedar</p>
+                <div class="preco"> <button> R$20,00 </button> </div>
+              </div>
+
+          </div>
+
+          <div class="card"> <!-- Combo pra galera -->
+
+              <div class="image">
+                <img src="assets/images/Logo.png">
+                <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a>
+              </div>
+
+              <div class="info-card">
+                <h2 class="titulo">Combo pra galera</h2>
+                <p class="descricao">3 baguncinha <br> 1 Coca cola 1,5L <br> 1 batata pequena com cheedar</p>
+                <div class="preco"> <button> R$20,00 </button> </div>
+              </div>
+
+          </div>
+
+          <div class="card"> <!-- Combo pra geral -->
+
+              <div class="image">
+                <img src="assets/images/Logo.png">
+                <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a>
+              </div>
+
+              <div class="info-card">
+                <h2 class="titulo">Combo pra geral</h2>
+                <p class="descricao">4 baguncinha <br> 1 Coca cola 1,5L <br> 1 batata pequena com cheedar</p>
+                <div class="preco"> <button> R$20,00 </button> </div>
+              </div>
+
+          </div>
+
+          <div class="card"> <!-- Combo amizade -->
+
+              <div class="image">
+                <img src="assets/images/Logo.png">
+                <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a>
+              </div>
+
+              <div class="info-card">
+                <h2 class="titulo">Combo amizade</h2>
+                <p class="descricao">5 baguncinha <br> 1 Coca cola 1,5L <br> 1 batata pequena com cheedar</p>
+                <div class="preco"> <button> R$20,00 </button> </div>
+              </div>
+
+          </div>
+
+          <div class="card"> <!-- Combo Miague Tradicional -->
+
+              <div class="image">
+                <img src="assets/images/Logo.png">
+                <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a>
+              </div>
+
+              <div class="info-card">
+                <h2 class="titulo">Combo Miague Tradicional</h2>
+                <p class="descricao">3 baguncinha <br> 1 porção grande de calabresa acebolada <br> 1 porção grande de batata com cheddar e bacon</p>
+                <div class="preco"> <button> R$20,00 </button> </div>
+              </div>
+
+          </div>
+
+          <div class="card"> <!-- Combo Miague Artesanal -->
+
+              <div class="image">
+                <img src="assets/images/Logo.png">
+                <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a>
+              </div>
+
+              <div class="info-card">
+                <h2 class="titulo">Combo Miague Artesanal</h2>
+                <p class="descricao">3 X-da casa <br> 1 porção grande de calabresa acebolada <br> 1 porçao grande de batata com cheddar e bacon</p>
+                <div class="preco"> <button> R$20,00 </button> </div>
+              </div>
+
+          </div>
+
+        </div>
+
+        <!-- Gourmet -->
+        <div id="gourmet" class="box">          
+
+          <div class="card"> <!-- X-Burguer da Casa -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">X-Burguer da Casa</h2>
+              <p class="descricao">Pão, hambúrguer artesanal 100g, presunto, mussarela, milho, tomate e molho especial.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Bacon da Casa -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">X-Bacon da Casa</h2>
+              <p class="descricao">Pão, hambúrguer artesanal 100g, presunto, mussarela, milho, tomate e molho especial.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Salada da Casa -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Salada da Casa</h2>
+              <p class="descricao">Pão, hambúrguer artesanal 100g, presunto, mussarela, alface, tomate, milho e molho especial.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Egg da Casa -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Egg da Casa</h2>
+              <p class="descricao">Pão, hambúrguer artesanal 100g, 2 ovos, presunto, mussarela, alface, tomate, milho e molho especial.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Da Casa -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Da Casa</h2>
+              <p class="descricao">Pão, hambúrguer artesanal 150g, ovo, presunto, mussarela, alface, tomate, milho e molho especial.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Da Casa Bagunça -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">X-Da Casa Bagunça</h2>
+              <p class="descricao">Pão, hambúrguer artesanal 150g, salsicha, baco, ovo, calabresa, catupiry, presunto, mussarela, alface, tomate, milho e molho especial.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Mestre -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Mestre</h2>
+              <p class="descricao">Pão, 2 hambúrguer artesanal de 150g, recheado de catupiry, bacon, cheddar, cream cheese e molho especial.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Mestre -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Tudo Artesanal</h2>
+              <p class="descricao">Pão, hambúrguer artesanal, filé mignon, filé de frango, salsicha, bacon, ovo, catupiry, presunto, mussarela, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Tradicionais -->
+        <div id="tradicionais" class="box">          
+
+          <div class="card"> <!-- X-Bagunça -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">X-Bagunça</h2>
+              <p class="descricao">Pão, hambúrguer industrializado, salsicha, bacon, ovo, calabresa, catupiry, presunto, mussarela, milho, alface, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$22,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Bagunça duplo -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">X-Bagunça duplo</h2>
+              <p class="descricao">Pão, 2 hambúrguer industrializado, salsicha, bacon, ovo, calabresa, catupiry, presunto, mussarela, milho, alface, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$26,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Baurú -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">Baurú</h2>
+              <p class="descricao">Pão,2 presunto, 2 mussarela, tomate e molho especial.</p>
+              <div class="preco"> <button> R$12,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Egg -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Egg</h2>
+              <p class="descricao">Pão, hambúrguer industrializado, 2 ovos, presunto, mussarela, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$17,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Tudo Idustrial -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Tudo Idustrial</h2>
+              <p class="descricao">Pão, hambúrguer industrial, filé mignon, filé de frango, salsicha, bacon, ovos, catupiry, presunto, mussarela, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$45,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Baguncinha completo -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">Baguncinha completo</h2>
+              <p class="descricao">Pão, hambúrguer industrializado, salsicha, bacon, ovo, presunto, mussarela, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$16,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Bacon -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Bacon</h2>
+              <p class="descricao">Pão, hambúrguer industrializado, muito bacon, presunto, mussarela, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Burguer -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Burguer</h2>
+              <p class="descricao">Pão, hambúrguer industrializado, presunto, mussarela, tomate e molho especial.</p>
+              <div class="preco"> <button> R$14,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Salada -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+
+            <div class="info-card">
+              <h2 class="titulo">X-Burguer</h2>
+              <p class="descricao">Pão, hambúrguer industrializado, presunto, mussarela, alface, tomate, milho e molho especial.</p>
+              <div class="preco"> <button> R$16,00 </button> </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Smash -->
+        <div id="smash" class="box">          
+
+          <div class="card"> <!-- Smash Kids -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">Smash Kids</h2>
+              <p class="descricao">Pão de brioche, 1 blend de 90g, 1 queijo cheddar.</p>
+              <div class="preco"> <button> R$15,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Smash Burguer -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">Smash Burguer</h2>
+              <p class="descricao">Pão de brioche, 1 blend de 90g, 2 queijo cheddar e cebola caramelizada.</p>
+              <div class="preco"> <button> R$17,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Smash Salada -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">Smash Salada</h2>
+              <p class="descricao">Pão de brioche, 1 blend de 90g, 2 queijo cheddar, alface picado, tomate e geleia de pimenta.</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Smash creme -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">Smash creme</h2>
+              <p class="descricao">Pão de brioche, 1 blend de 90g, 2 fatia de queijo, cream cheese, picles, alface picado e tomate.</p>
+              <div class="preco"> <button> R$25,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Smash acebolado -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">Smash acebolado</h2>
+              <p class="descricao">Pão de brioche, 1 blend de 90g, 2 queijo cheddar, alface picado, tomate e cebola caramelizada.</p>
+              <div class="preco"> <button> R$22,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Smash Duplo -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-preto.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">Smash Duplo</h2>
+              <p class="descricao">Pão de brioche, 2 blend de 90g, 2 queijo cheddar e cebola caramelizada.</p>
+              <div class="preco"> <button> R$24,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Smash Duplo Bacon -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-verde.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">Smash Duplo Bacon</h2>
+              <p class="descricao">Pão de brioche, 2 blend de 90g, 2 queijo cheddar, bacon e molho barbecue.</p>
+              <div class="preco"> <button> R$26,00 </button> </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Filés -->
+        <div id="files" class="box">          
+
+          <div class="card"> <!-- X-Frango -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-verde.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">X-Frango</h2>
+              <p class="descricao">Pão, filé de frango, presunto, mussarela, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$25,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Frango Bagunça -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-verde.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">X-Frango Bagunça</h2>
+              <p class="descricao">Pão, filé de frango, salsicha, bacon, ovo, presunto, mussarela, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$28,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- X-Filé -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-verde.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">X-Filé</h2>
+              <p class="descricao">Pão, filé mignon, presunto, mussarela, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$28,00 </button> </div>
+            </div>
+
+          </div>
+
+
+          <div class="card"> <!-- X-Filé Bagunça -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-verde.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">X-Filé Bagunça</h2>
+              <p class="descricao">Pão, filé mignon, salsicha, bacon, ovo, presunto, mussarela, milho, alface, tomate e molho especial.</p>
+              <div class="preco"> <button> R$34,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Paulistinha -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+              <a href=""> <button class="pedir"> <img src="assets/images/whatsapp-verde.svg" alt=""> <p> Peça agora </p> </button> </a> 
+            </div>
+              
+            <div class="info-card">
+              <h2 class="titulo">Paulistinha</h2>
+              <p class="descricao">Pão Francês, filé mignon, queijo, alface, tomate, cebola e molho especial.</p>
+              <div class="preco"> <button> R$30,00 </button> </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Porções -->
+        <div id="porcoes" class="box">          
+
+          <div class="card"> <!-- Porção de batata 300g com Cheddar -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+            </div>
+              
+            <div class="info-card">
+              <p class="titulo">Porção de batata 300g com Cheddar</p>
+              <div class="preco"> <button> R$15,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Porção de batata 500g com Cheddar -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+            </div>
+              
+            <div class="info-card">
+              <p class="titulo">Porção de batata 500g com Cheddar</p>
+              <div class="preco"> <button> R$25,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Porção de calabresa acebolada pequena -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+            </div>
+              
+            <div class="info-card">
+              <p class="titulo">Porção de calabresa acebolada pequena</p>
+              <div class="preco"> <button> R$20,00 </button> </div>
+            </div>
+
+          </div>
+
+          <div class="card"> <!-- Porção de calabresa acebolada grande -->
+
+            <div class="image">
+              <img src="assets/images/Logo.png">
+            </div>
+              
+            <div class="info-card">
+              <p class="titulo">Porção de calabresa acebolada grande</p>
+              <div class="preco"> <button> R$30,00 </button> </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <div class="icons">
+        <a href="https://www.ifood.com.br/delivery/cuiaba-mt/miague-burger-jardim-imperial/b3f21f3f-207b-4a74-be0d-043169881f3e"> <img src="assets/images/ifood-preto.svg" alt=""> </a>
+        <a href="https://www.instagram.com/miagueburger/"><img src="assets/images/instagram.svg" alt=""></a>
+        <a href="https://wa.me/5565992986191?text=Ol%C3%A1+gostaria+de+fazer+um+pedido"><img src="assets/images/whatsapp-preto.svg" alt=""></a>
+      </div>
+
+      <div class="linkFooter">
+        <a href="">Info</a>
+        <a href="">Support</a>
+        <a href="">About</a>
+      </div>
+      
+      <p> Todos os direitos reservados &copy; 2024 Miague Burguer </p>
+            
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
+    
+  </body>
+
+</html>
