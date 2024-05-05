@@ -214,11 +214,11 @@ a:link {
 .menu-header:hover {
     color: var(--laranja-claro);
     transition: .2s ease-in-out;
-    text-shadow: 0 0 5px rgb(243, 216, 180, .7);
 }
 
 .menu-active {
     color: var(--laranja-menos-claro);
+    text-shadow: 0 0 5px rgb(214, 172, 120, .7);
 }
 
 /* RECOMENDADOS */
